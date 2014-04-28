@@ -37,7 +37,7 @@ class LanglinkRtePageTree extends \TYPO3\CMS\Rtehtmlarea\PageTree {
 				$arrCol='<td></td>';
 			}
 
-			$aOnClick = 'return jumpToUrl(\''.$this->thisScript.'?act='.$GLOBALS['SOBE']->browser->act.'&editorNo='.$GLOBALS['SOBE']->browser->editorNo.'&contentTypo3Language='.$GLOBALS['SOBE']->browser->contentTypo3Language.'&contentTypo3Charset='.$GLOBALS['SOBE']->browser->contentTypo3Charset.'&mode='.$GLOBALS['SOBE']->browser->mode.'&expandPage='.$v['row']['uid'].'\');';
+			$aOnClick = 'return jumpToUrl(\''.$this->thisScript.'&act='.$GLOBALS['SOBE']->browser->act.'&editorNo='.$GLOBALS['SOBE']->browser->editorNo.'&contentTypo3Language='.$GLOBALS['SOBE']->browser->contentTypo3Language.'&contentTypo3Charset='.$GLOBALS['SOBE']->browser->contentTypo3Charset.'&mode='.$GLOBALS['SOBE']->browser->mode.'&expandPage='.$v['row']['uid'].'\');';
 			$cEbullet = $this->ext_isLinkable($v['row']['doktype'],$v['row']['uid']) ?
 						'<a href="#" onclick="'.htmlspecialchars($aOnClick).'"><img'.IconUtility::skinImg($BACK_PATH,'gfx/ol/arrowbullet.gif','width="18" height="16"').' alt="" /></a>' :
 						'';
