@@ -44,4 +44,9 @@ if (class_exists('Cabag\CabagLanglink\\' . CabagLanglink_TYPO3_version . '\Hooks
 	$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_content.php']['typolinkLinkHandler']['L'] = '\Cabag\CabagLanglink\\' . CabagLanglink_TYPO3_version . '\Hooks\LanglinkTypolinkHook';
 }
 
+/* hook for rte transformation */
+if (class_exists('Cabag\CabagLanglink\\' . CabagLanglink_TYPO3_version . '\Hooks\RteTransformationHook')) {
+	$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_parsehtml_proc.php']['transformation']['ts_links'] = '\Cabag\CabagLanglink\\' . CabagLanglink_TYPO3_version . '\Hooks\RteTransformationHook';
+}
+
 ?>

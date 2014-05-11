@@ -3,9 +3,9 @@
  * @author	Sonja Scholz <ss@cabag.ch>
  * @package TYPO3
  */
-namespace Cabag\CabagLanglink\v620\Hooks;
+namespace Cabag\CabagLanglink\v620\Utility;
 
-final class LanglinkBrowseLinks {
+final class LanglinkBrowseLinksUtility {
 	/**
 	 * get the flag HTML for the xclasses
 	 *

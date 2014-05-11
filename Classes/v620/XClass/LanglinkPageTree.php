@@ -6,7 +6,7 @@
 
 namespace Cabag\CabagLanglink\v620\XClass;
 
-use Cabag\CabagLanglink\v620\Hooks\LanglinkBrowseLinks;
+use Cabag\CabagLanglink\v620\Utility\LanglinkBrowseLinksUtility;
 use TYPO3\CMS\Backend\Utility\IconUtility;
 
 class LanglinkPageTree extends \localPageTree {
@@ -40,7 +40,7 @@ class LanglinkPageTree extends \localPageTree {
 						'';
 						
 			// Get the flags HTML code depending on the available pages_language_overlay records for the current page
-			$langLinks = LanglinkBrowseLinks::getFlagHTML($v['row']['uid']);
+			$langLinks = LanglinkBrowseLinksUtility::getFlagHTML($v['row']['uid']);
 				
 			$out.='
 				<tr class="'.$bgColorClass.'">

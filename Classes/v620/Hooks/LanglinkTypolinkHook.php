@@ -51,7 +51,6 @@ class LanglinkTypolinkHook {
 	 */
 	function main($linktxt, $conf, $linkHandlerKeyword, $linkHandlerValue, $linkParams, &$pObj) {
 		$this->pObj = &$pObj;
-		$generatedLink = '';
 		$addQueryParams = '';
 		$tx_cabaglanglink_extconf = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['cabag_langlink']);
 		
@@ -60,11 +59,11 @@ class LanglinkTypolinkHook {
 		if($furtherLinkParams == $linkParams) {
 			$furtherLinkParams = '';
 		}
-		
+
 		// check if the parameter includes a language setting
-		$splittetValue = GeneralUtility::trimExplode('/',$linkHandlerValue);
-		$language = $splittetValue[0];
-		$linkParam = $splittetValue[1];
+		$splittedValue = GeneralUtility::trimExplode('/',$linkHandlerValue);
+		$language = $splittedValue[0];
+		$linkParam = $splittedValue[1];
 		
 		// SS: Check if there is already a L parameter in the params otherwise add the fixed language setting
 		if(!empty($conf['additionalParams']) || !empty($conf['additionalParams.'])) {

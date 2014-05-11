@@ -94,7 +94,7 @@ class LanglinkBrowseLinksHook implements \TYPO3\CMS\Core\ElementBrowser\ElementB
 	 */
 	public function parseCurrentUrl($href, $siteUrl, $info) {
 		// langlink is parsed as page by default
-		if ($info['act'] === 'page') {
+		if ($info['act'] === 'page' || $info['act'] === 'url') {
 			$matches = array();
 			// check if the parameter is of the type http://www.example.com/?=L:1/23 and extract the page id
 			if (GeneralUtility::isFirstPartOfStr($href, $siteUrl) && preg_match('#^\?id=L:(\d+)/(\d+)$#i', substr($href, strlen($siteUrl)), $matches)) {
