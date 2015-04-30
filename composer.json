@@ -1,0 +1,7 @@
+{
+  "name": "cabag/cabag-langlink",
+  "type": "typo3-cms-extension",
+  "description": "language link",
+  "homepage": "https://github.com/visol/ext-cabag_langlink.git",
+  "license": ["GPL-2.0+"]
+}
