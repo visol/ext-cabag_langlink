@@ -1,7 +1,39 @@
-2014-04-28 Lorenz Ulrich <lorenz.ulrich@visol.ch>
+2014-12-08 Nils Blattner <nb@cabag.ch>
+	* version 0.4.3
+	* added support for 4.5.38
+
+2014-11-28 Nils Blattner <nb@cabag.ch>
+	* version 0.4.2
+	* added support for 4.5.37
+
+2014-10-07 Nils Blattner <nb@cabag.ch>
+	* version 0.4.1
+	* [TASK] merged folders for versions 4.7.15 and 4.7.17 from another version
+
+2014-09-18 Tizian Schmidlin <st@cabag.ch>
+	* version 0.4.0
+	* merged forge and production, now supports TYPO3 < 6.0 and >= 6.2
+
+2014-09-18 Lorenz Ulrich <lorenz.ulrich@visol.ch>
 	* Dropped 4.x support
 	* Added support for TYPO3 6.2, use namespaces throughout the extension
 
+2014-07-10 Michael Bossart <mb@cabag.ch>
+	* version 0.3.0
+	* copied 4.5.32 files into new '4.5.35' folder as to ensure compatibility with typo3 4.5.35
+	
+2014-02-06 Raphael Wälterlin <rw@cabag.ch>
+	* version 0.2.9
+	* copied 4.5.27 files into new '4.5.32' folder as to ensure compatibility with typo3 4.5.32
+	
+2013-10-02 Tizian Schmidlin <st@cabag.ch>
+	* version 0.2.8
+	* [SECURITY] fixed #3756, BE_USER SQL injection possibility for 4.5+
+
+2013-06-21 - Massimo Lepore <ml@cabag.ch>
+	* version 0.2.7
+	* Adapted extension to clean up requirements for TER
+	
 2013-05-31 Tizian Schmidlin <st@cabag.ch>
 	* version 0.2.6
 	* added support for 4.5.27

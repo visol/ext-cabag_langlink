@@ -1,4 +1,4 @@
-# cat=basic//10; type=input; label= Simulate TYPO3 Version, e.g. "v620" for version 6.2.0 (directory Classes/vXXX must exist)
+# cat=basic//10; type=input; label= Simulate TYPO3 Version (directory must exist)
 simulateTYPO3Version =
 
   # cat=basic//10; type=string; label= Language parameter: Name of the language parameter. In most installations it should be L
