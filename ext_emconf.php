@@ -3,7 +3,7 @@
 /***************************************************************
  * Extension Manager/Repository config file for ext "cabag_langlink".
  *
- * Auto generated 28-04-2014 12:37
+ * Auto generated 08-12-2014 16:06
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next
@@ -14,29 +14,19 @@ $EM_CONF[$_EXTKEY] = array (
 	'title' => 'cab services ag - language link',
 	'description' => 'Changes the typolink functionality to make it possible to link to an explicitly language of a page. For installation guide and screenshots hava look at the project page on http://forge.typo3.org/projects/show/extension-cabag_langlink',
 	'category' => 'be',
-	'shy' => 0,
-	'version' => '0.3-dev',
-	'dependencies' => '',
-	'conflicts' => '',
-	'priority' => '',
-	'loadOrder' => '',
-	'module' => '',
+	'author' => 'Sonja Scholz',
+	'author_email' => 'ss@cabag.ch',
 	'state' => 'stable',
 	'uploadfolder' => 0,
 	'createDirs' => '',
-	'modify_tables' => '',
-	'clearcacheonload' => 0,
-	'lockType' => '',
-	'author' => 'Sonja Scholz',
-	'author_email' => 'ss@cabag.ch',
+	'clearCacheOnLoad' => 0,
 	'author_company' => '',
-	'CGLcompliance' => NULL,
-	'CGLcompliance_note' => NULL,
+	'version' => '0.4.3',
 	'constraints' => 
 	array (
 		'depends' => 
 		array (
-			'typo3' => '6.2.0-6.2.99',
+			'typo3' => '4.5.0-6.2.99',
 		),
 		'conflicts' => 
 		array (
@@ -45,6 +35,6 @@ $EM_CONF[$_EXTKEY] = array (
 		array (
 		),
 	),
+	'_md5_values_when_last_written' => 'a:100:{s:9:"ChangeLog";s:4:"38c8";s:16:"ext_autoload.php";s:4:"1c62";s:21:"ext_conf_template.txt";s:4:"1f5d";s:12:"ext_icon.gif";s:4:"3199";s:17:"ext_localconf.php";s:4:"a5c3";s:10:"README.txt";s:4:"960e";s:46:"Classes/v620/Hooks/LanglinkBrowseLinksHook.php";s:4:"179a";s:43:"Classes/v620/Hooks/LanglinkTypolinkHook.php";s:4:"0ea2";s:44:"Classes/v620/Hooks/RteTransformationHook.php";s:4:"3637";s:51:"Classes/v620/Utility/LanglinkBrowseLinksUtility.php";s:4:"4765";s:40:"Classes/v620/XClass/LanglinkPageTree.php";s:4:"7ba6";s:43:"Classes/v620/XClass/LanglinkRtePageTree.php";s:4:"6b5f";s:19:"doc/wizard_form.dat";s:4:"965d";s:20:"doc/wizard_form.html";s:4:"b3dc";s:59:"typo3_versions/4.2.10/class.tx_cabaglanglink_browslinks.php";s:4:"20a0";s:63:"typo3_versions/4.2.10/class.user_tslib_content_typolinkHook.php";s:4:"d523";s:47:"typo3_versions/4.2.10/class.ux_browse_links.php";s:4:"3667";s:62:"typo3_versions/4.2.10/class.ux_tx_rtehtmlarea_browse_links.php";s:4:"3981";s:58:"typo3_versions/4.2.5/class.tx_cabaglanglink_browslinks.php";s:4:"20a0";s:62:"typo3_versions/4.2.5/class.user_tslib_content_typolinkHook.php";s:4:"d523";s:46:"typo3_versions/4.2.5/class.ux_browse_links.php";s:4:"3667";s:61:"typo3_versions/4.2.5/class.ux_tx_rtehtmlarea_browse_links.php";s:4:"3981";s:58:"typo3_versions/4.2.6/class.tx_cabaglanglink_browslinks.php";s:4:"20a0";s:62:"typo3_versions/4.2.6/class.user_tslib_content_typolinkHook.php";s:4:"d523";s:46:"typo3_versions/4.2.6/class.ux_browse_links.php";s:4:"3667";s:61:"typo3_versions/4.2.6/class.ux_tx_rtehtmlarea_browse_links.php";s:4:"3981";s:58:"typo3_versions/4.3.0/class.tx_cabaglanglink_browslinks.php";s:4:"20a0";s:62:"typo3_versions/4.3.0/class.user_tslib_content_typolinkHook.php";s:4:"d523";s:46:"typo3_versions/4.3.0/class.ux_browse_links.php";s:4:"3667";s:61:"typo3_versions/4.3.0/class.ux_tx_rtehtmlarea_browse_links.php";s:4:"3981";s:58:"typo3_versions/4.3.1/class.tx_cabaglanglink_browslinks.php";s:4:"20a0";s:62:"typo3_versions/4.3.1/class.user_tslib_content_typolinkHook.php";s:4:"d523";s:46:"typo3_versions/4.3.1/class.ux_browse_links.php";s:4:"3667";s:61:"typo3_versions/4.3.1/class.ux_tx_rtehtmlarea_browse_links.php";s:4:"3981";s:58:"typo3_versions/4.3.2/class.tx_cabaglanglink_browslinks.php";s:4:"20a0";s:62:"typo3_versions/4.3.2/class.user_tslib_content_typolinkHook.php";s:4:"d523";s:46:"typo3_versions/4.3.2/class.ux_browse_links.php";s:4:"3667";s:61:"typo3_versions/4.3.2/class.ux_tx_rtehtmlarea_browse_links.php";s:4:"3981";s:58:"typo3_versions/4.4.0/class.tx_cabaglanglink_browslinks.php";s:4:"20a0";s:62:"typo3_versions/4.4.0/class.user_tslib_content_typolinkHook.php";s:4:"d523";s:46:"typo3_versions/4.4.0/class.ux_browse_links.php";s:4:"3667";s:61:"typo3_versions/4.4.0/class.ux_tx_rtehtmlarea_browse_links.php";s:4:"3981";s:58:"typo3_versions/4.5.0/class.tx_cabaglanglink_browslinks.php";s:4:"ab92";s:62:"typo3_versions/4.5.0/class.user_tslib_content_typolinkHook.php";s:4:"d523";s:46:"typo3_versions/4.5.0/class.ux_browse_links.php";s:4:"3667";s:61:"typo3_versions/4.5.0/class.ux_tx_rtehtmlarea_browse_links.php";s:4:"6a5d";s:58:"typo3_versions/4.5.1/class.tx_cabaglanglink_browslinks.php";s:4:"890d";s:62:"typo3_versions/4.5.1/class.user_tslib_content_typolinkHook.php";s:4:"d523";s:46:"typo3_versions/4.5.1/class.ux_browse_links.php";s:4:"3667";s:61:"typo3_versions/4.5.1/class.ux_tx_rtehtmlarea_browse_links.php";s:4:"6a5d";s:64:"typo3_versions/4.5.16/class.tx_cabaglanglink_browseLinksHook.php";s:4:"961c";s:59:"typo3_versions/4.5.16/class.tx_cabaglanglink_browslinks.php";s:4:"8f31";s:63:"typo3_versions/4.5.16/class.user_tslib_content_typolinkHook.php";s:4:"d523";s:47:"typo3_versions/4.5.16/class.ux_browse_links.php";s:4:"3667";s:62:"typo3_versions/4.5.16/class.ux_tx_rtehtmlarea_browse_links.php";s:4:"6a5d";s:63:"typo3_versions/4.5.2/class.tx_cabaglanglink_browseLinksHook.php";s:4:"961c";s:58:"typo3_versions/4.5.2/class.tx_cabaglanglink_browslinks.php";s:4:"70de";s:62:"typo3_versions/4.5.2/class.user_tslib_content_typolinkHook.php";s:4:"d523";s:46:"typo3_versions/4.5.2/class.ux_browse_links.php";s:4:"3667";s:61:"typo3_versions/4.5.2/class.ux_tx_rtehtmlarea_browse_links.php";s:4:"6a5d";s:64:"typo3_versions/4.5.26/class.tx_cabaglanglink_browseLinksHook.php";s:4:"961c";s:59:"typo3_versions/4.5.26/class.tx_cabaglanglink_browslinks.php";s:4:"8f31";s:63:"typo3_versions/4.5.26/class.user_tslib_content_typolinkHook.php";s:4:"d523";s:47:"typo3_versions/4.5.26/class.ux_browse_links.php";s:4:"3667";s:62:"typo3_versions/4.5.26/class.ux_tx_rtehtmlarea_browse_links.php";s:4:"6a5d";s:64:"typo3_versions/4.5.27/class.tx_cabaglanglink_browseLinksHook.php";s:4:"961c";s:59:"typo3_versions/4.5.27/class.tx_cabaglanglink_browslinks.php";s:4:"8f31";s:63:"typo3_versions/4.5.27/class.user_tslib_content_typolinkHook.php";s:4:"d523";s:47:"typo3_versions/4.5.27/class.ux_browse_links.php";s:4:"3667";s:62:"typo3_versions/4.5.27/class.ux_tx_rtehtmlarea_browse_links.php";s:4:"6a5d";s:64:"typo3_versions/4.5.32/class.tx_cabaglanglink_browseLinksHook.php";s:4:"961c";s:59:"typo3_versions/4.5.32/class.tx_cabaglanglink_browslinks.php";s:4:"8f31";s:63:"typo3_versions/4.5.32/class.user_tslib_content_typolinkHook.php";s:4:"d523";s:47:"typo3_versions/4.5.32/class.ux_browse_links.php";s:4:"3667";s:62:"typo3_versions/4.5.32/class.ux_tx_rtehtmlarea_browse_links.php";s:4:"6a5d";s:64:"typo3_versions/4.5.35/class.tx_cabaglanglink_browseLinksHook.php";s:4:"961c";s:59:"typo3_versions/4.5.35/class.tx_cabaglanglink_browslinks.php";s:4:"8f31";s:63:"typo3_versions/4.5.35/class.user_tslib_content_typolinkHook.php";s:4:"d523";s:47:"typo3_versions/4.5.35/class.ux_browse_links.php";s:4:"3667";s:62:"typo3_versions/4.5.35/class.ux_tx_rtehtmlarea_browse_links.php";s:4:"6a5d";s:63:"typo3_versions/4.5.8/class.tx_cabaglanglink_browseLinksHook.php";s:4:"961c";s:58:"typo3_versions/4.5.8/class.tx_cabaglanglink_browslinks.php";s:4:"8f31";s:62:"typo3_versions/4.5.8/class.user_tslib_content_typolinkHook.php";s:4:"d523";s:46:"typo3_versions/4.5.8/class.ux_browse_links.php";s:4:"3667";s:61:"typo3_versions/4.5.8/class.ux_tx_rtehtmlarea_browse_links.php";s:4:"6a5d";s:64:"typo3_versions/4.7.15/class.tx_cabaglanglink_browseLinksHook.php";s:4:"961c";s:59:"typo3_versions/4.7.15/class.tx_cabaglanglink_browslinks.php";s:4:"8f31";s:63:"typo3_versions/4.7.15/class.user_tslib_content_typolinkHook.php";s:4:"d523";s:47:"typo3_versions/4.7.15/class.ux_browse_links.php";s:4:"3667";s:62:"typo3_versions/4.7.15/class.ux_tx_rtehtmlarea_browse_links.php";s:4:"6a5d";s:64:"typo3_versions/4.7.17/class.tx_cabaglanglink_browseLinksHook.php";s:4:"961c";s:59:"typo3_versions/4.7.17/class.tx_cabaglanglink_browslinks.php";s:4:"8f31";s:63:"typo3_versions/4.7.17/class.user_tslib_content_typolinkHook.php";s:4:"d523";s:47:"typo3_versions/4.7.17/class.ux_browse_links.php";s:4:"3667";s:62:"typo3_versions/4.7.17/class.ux_tx_rtehtmlarea_browse_links.php";s:4:"6a5d";s:63:"typo3_versions/4.7.7/class.tx_cabaglanglink_browseLinksHook.php";s:4:"961c";s:58:"typo3_versions/4.7.7/class.tx_cabaglanglink_browslinks.php";s:4:"8f31";s:62:"typo3_versions/4.7.7/class.user_tslib_content_typolinkHook.php";s:4:"d523";s:46:"typo3_versions/4.7.7/class.ux_browse_links.php";s:4:"3667";s:61:"typo3_versions/4.7.7/class.ux_tx_rtehtmlarea_browse_links.php";s:4:"6a5d";}',
 );
 
-?>

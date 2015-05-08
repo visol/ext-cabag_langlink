@@ -1,6 +1,5 @@
 Extension: cabag_langlink
 Autor: Sonja Scholz <ss@cabag.ch>
-TYPO3 6.2 compatible version: Lorenz Ulrich <lorenz.ulrich@visol.ch>
 
 Funtionality:
 =============
