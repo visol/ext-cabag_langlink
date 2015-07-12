@@ -38,17 +38,17 @@ final class LanglinkBrowseLinksUtility {
 			$defaultFlag = $defaultFlag['value'];
 			if (!preg_match('/\.[a-z]+$/', $defaultFlag)) {
 				// version 4.5.0 only saves 'gb' for 'gb.gif'
-				$defaultFlag .= '.gif';
+				$defaultFlag .= '.png';
 			}
 			
 			if(empty($defaultFlag)) {
-				$defaultFlag = 'unknown.gif';
+				$defaultFlag = 'unknown.png';
 			}
 			
 			// add flag for link to the default language
 			$langLinks .= '
 				<a href="#" onclick="return link_typo3Page(\'L:0/'.$uid.'\');">
-					<img'.\TYPO3\CMS\Backend\Utility\IconUtility::skinImg($BACK_PATH,'gfx/flags/'.$defaultFlag,'width="20" height="12"').' alt="" />
+					<img'.\TYPO3\CMS\Backend\Utility\IconUtility::skinImg($BACK_PATH,'/typo3/sysext/core/Resources/Public/Icons/Flags/'.$defaultFlag,'width="20" height="12"').' alt="" />
 				</a>';
 			
 			// add flag for link to other languages
@@ -56,11 +56,11 @@ final class LanglinkBrowseLinksUtility {
 				foreach($listOfLangRecords as $langRecord) {
 					if (!preg_match('/\.[a-z]+$/', $langRecord['lang_flag'])) {
 						// version 4.5.0 only saves 'gb' for 'gb.gif'
-						$langRecord['lang_flag'] .= '.gif';
+						$langRecord['lang_flag'] .= '.png';
 					}
 					$langLinks .= '
 						<a href="#" onclick="return link_typo3Page(\'L:'.$langRecord['sys_language_uid'].'/'.$uid.'\');">
-							<img'.\TYPO3\CMS\Backend\Utility\IconUtility::skinImg($BACK_PATH,'gfx/flags/'.$langRecord['lang_flag'],'width="20" height="12"').' alt="" />
+							<img'.\TYPO3\CMS\Backend\Utility\IconUtility::skinImg($BACK_PATH,'/typo3/sysext/core/Resources/Public/Icons/Flags/'.$langRecord['lang_flag'],'width="20" height="12"').' alt="" />
 						</a>';
 				}
 			}
