@@ -46,7 +46,7 @@ class LanglinkTypolinkHook {
 	 * @param string $linkHandlerKeyword Define the identifier that an record is given
 	 * @param string $linkHandlerValue Table and uid of the requested record like "tt_news:2"
 	 * @param string $linkParams Full link params like "record:tt_news:2"
-	 * @param tslib_cObj $pObj
+	 * @param \TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer $pObj
 	 * @return string
 	 */
 	function main($linktxt, $conf, $linkHandlerKeyword, $linkHandlerValue, $linkParams, &$pObj) {
@@ -76,7 +76,7 @@ class LanglinkTypolinkHook {
 			unset($conf['parameter.']);
 			$conf['parameter'] = $linkParam.$furtherLinkParams;
 			
-			$localcObj = GeneralUtility::makeInstance('tslib_cObj');
+			$localcObj = GeneralUtility::makeInstance('TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer');
 			// build the full link to the record
 			$generatedLink = $localcObj->typoLink($linktxt, $conf);
 		} else {
