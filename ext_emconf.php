@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array (
 	'description' => 'Changes the typolink functionality to make it possible to link to an explicitly language of a page. For installation guide and screenshots hava look at the project page on http://forge.typo3.org/projects/show/extension-cabag_langlink',
 	'category' => 'be',
 	'shy' => 0,
-	'version' => '0.3-dev',
+	'version' => '0.4-dev',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
@@ -36,7 +36,7 @@ $EM_CONF[$_EXTKEY] = array (
 	array (
 		'depends' => 
 		array (
-			'typo3' => '6.2.0-6.2.99',
+			'typo3' => '6.2.0-7.99.99',
 		),
 		'conflicts' => 
 		array (
@@ -46,5 +46,3 @@ $EM_CONF[$_EXTKEY] = array (
 		),
 	),
 );
-
-?>

@@ -9,7 +9,7 @@ namespace Cabag\CabagLanglink\v620\XClass;
 use Cabag\CabagLanglink\v620\Utility\LanglinkBrowseLinksUtility;
 use TYPO3\CMS\Backend\Utility\IconUtility;
 
-class LanglinkPageTree extends \localPageTree {
+class LanglinkPageTree extends \TYPO3\CMS\Backend\Tree\View\ElementBrowserPageTreeView {
 	/**
 	 * Create the page navigation tree in HTML
 	 *
