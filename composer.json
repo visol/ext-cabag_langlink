@@ -3,5 +3,10 @@
   "type": "typo3-cms-extension",
   "description": "language link",
   "homepage": "https://github.com/visol/ext-cabag_langlink.git",
-  "license": ["GPL-2.0+"]
+  "license": ["GPL-2.0+"],
+  "autoload": {
+  	"psr-4": {
+  		"Cabag\\CabagLanglink\\": "Classes"
+  	}
+  }
 }
