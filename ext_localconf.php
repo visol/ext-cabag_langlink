@@ -28,6 +28,19 @@ if (class_exists('Cabag\CabagLanglink\\' . CabagLanglink_TYPO3_version . '\XClas
 	);
 }
 
+/* xclass for element browser */
+if (class_exists('Cabag\CabagLanglink\\' . CabagLanglink_TYPO3_version . '\XClass\RecordlistElementBrowser')) {
+	$GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects']['TYPO3\\CMS\\Recordlist\\Browser\\ElementBrowser'] = array(
+		'className' => 'Cabag\\CabagLanglink\\' . CabagLanglink_TYPO3_version . '\\XClass\\RecordlistElementBrowser',
+	);
+}
+
+	if (class_exists('Cabag\CabagLanglink\\' . CabagLanglink_TYPO3_version . '\XClass\RtehtmlareaBrowseLinks')) {
+	$GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects']['TYPO3\\CMS\\Rtehtmlarea\\BrowseLinks'] = array(
+		'className' => 'Cabag\\CabagLanglink\\' . CabagLanglink_TYPO3_version . '\\XClass\\RtehtmlareaBrowseLinks',
+	);
+}
+
 /* hook to display the langlink as a page link */
 if (class_exists('Cabag\CabagLanglink\\' . CabagLanglink_TYPO3_version . '\Hooks\LanglinkBrowseLinksHook')) {
 	$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['typo3/class.browse_links.php']['browseLinksHook'][] = '\Cabag\CabagLanglink\\' . CabagLanglink_TYPO3_version . '\Hooks\LanglinkBrowseLinksHook';
